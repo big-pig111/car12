@@ -40,6 +40,7 @@ export default class Car
         this.setTransformControls()
         this.setShootingBall()
         this.setKlaxon()
+        this.soundController()
     }
 
     setModels()
@@ -98,6 +99,7 @@ export default class Car
             if(this.movement.localAcceleration.x > 0.03 && this.time.elapsed - this.movement.lastScreech > 5000)
             {
                 this.movement.lastScreech = this.time.elapsed
+                // Teker kayma sesi
                 this.sounds.play('screech')
             }
         })
@@ -385,5 +387,43 @@ export default class Car
                 })
             }
         })
+    }
+
+    findClosestObject() {
+        let closestObject = null;
+        let closestDistance = Infinity;
+    
+        const carPosition = this.position;
+        
+        const sceneObject = this.objects.container.parent.parent
+        if (!sceneObject) {
+            console.warn("Scene objesi bulunamadı!");
+            return null;
+        }
+
+        sceneObject.children
+            .filter((object) => object.name === 'SoundInteractiveObject')
+            .forEach((object) => {
+                const objectPosition = new THREE.Vector3();
+                object.getWorldPosition(objectPosition);
+    
+                const distance = carPosition.distanceTo(objectPosition);
+    
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestObject = object;
+                }
+            });
+    
+        return closestObject, closestDistance; // Closest object and distance
+    }
+
+    
+    soundController()
+    {
+        this.time.on('tick', () =>
+        {
+            var aa, bb = this.findClosestObject();
+        });
     }
 }
