@@ -1,10 +1,11 @@
 import * as THREE from 'three'
 
 // AreaFenceGeometry
-class AreaFenceGeometry
+class AreaFenceGeometry extends THREE.BufferGeometry
 {
     constructor(_width, _height, _depth,)
     {
+        super();
         // Parameters
         this.parameters = {
             width: _width,
@@ -113,16 +114,12 @@ class AreaFenceGeometry
         indices[7 * 3 + 1] = 0
         indices[7 * 3 + 2] = 7
 
-        const geometry = new THREE.BufferGeometry()
-
         // Set indices
-        geometry.setIndex(new THREE.BufferAttribute(indices, 1, false))
+        this.setIndex(new THREE.BufferAttribute(indices, 1, false))
 
         // Set attributes
-        geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
-        geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2))
-
-        return geometry
+        this.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3))
+        this.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2))
     }
 }
 
