@@ -116,7 +116,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
-                    href: 'https://threejs-journey.xyz',
+                    href: 'https://bonkcoin.com/',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -141,7 +141,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
                 {
-                    href: 'https://chartogne-taillet.com',
+                    href: 'https://build.bonkcoin.com/',
                     x: - 4.8,
                     y: - 3.3,
                     halfExtents:
@@ -168,7 +168,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsZenlyFloorTexture,
                 link:
                 {
-                    href: 'https://zen.ly',
+                    href: 'https://revenue.letsbonk.fun/',
                     x: - 4.8,
                     y: - 4.2,
                     halfExtents:
@@ -195,7 +195,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
                 link:
                 {
-                    href: 'https://prior.co.jp/discover/',
+                    href: 'https://letsbonk.fun/',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -222,7 +222,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsOranoFloorTexture,
                 link:
                 {
-                    href: 'https://www.orano.group/experience/innovation/',
+                    href: 'https://x.com/SolportTom',
                     x: - 4.8,
                     y: - 3.4,
                     halfExtents:
@@ -249,7 +249,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
                 link:
                 {
-                    href: 'https://thenewmobileworkforce.imm-g-prod.com/',
+                    href: 'https://x.com/JupiterExchange',
                     x: - 4.8,
                     y: - 4.4,
                     halfExtents:
@@ -277,7 +277,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsGleecChatFloorTexture,
                 link:
                 {
-                    href: 'http://gleec.imm-g-prod.com',
+                    href: 'https://x.com/theunipcs',
                     x: - 4.8,
                     y: - 3.4,
                     halfExtents:
@@ -304,7 +304,7 @@ export default class ProjectsSection
                 floorTexture: this.resources.items.projectsKepplerFloorTexture,
                 link:
                 {
-                    href: 'https://brunosimon.github.io/keppler/',
+                    href: 'https://x.com/aeyakovenko',
                     x: 2.75,
                     y: - 1.1,
                     halfExtents:
